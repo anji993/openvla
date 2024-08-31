@@ -29,7 +29,10 @@ classifiers = [
     "Programming Language :: Python :: 3 :: Only",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
-dependencies = [
+
+
+[project.optional-dependencies]
+standalone = [
     "accelerate>=0.25.0",
     "draccus==0.8.0",
     "einops",
@@ -55,7 +58,6 @@ dependencies = [
     "dlimp @ git+https://github.com/moojink/dlimp_openvla"
 ]
 
-[project.optional-dependencies]
 dev = [
     "black>=24.2.0",
     "gpustat",
